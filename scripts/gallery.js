@@ -28,11 +28,7 @@ $prevImageBtn=$(".prevImageBtn");
 
 $(window).load(function() {
 	$toolbar.data("imageViewMode",$defaultViewMode); //default view mode
-	if($defaultViewMode=="full"){
-		$toolbar_a.html("<img src='images/toolbar_n_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
-	} else {
-		$toolbar_a.html("<img src='images/toolbar_fs_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
-	}
+	
 	ShowHideNextPrev($nextPrevBtnsInitState);
 	//thumbnail scroller
 	$thumbScroller_container.css("marginLeft",$tsMargin+"px"); //add margin
